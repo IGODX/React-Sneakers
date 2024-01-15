@@ -4,7 +4,7 @@ import Card from "../components/Card"
 import AppContext from "../context";
  
 function Favorites({onAddToFavorite, onAddToCart}) {
-const {favorites,isItemFavorited} = React.useContext(AppContext);
+const {favorites,isItemFavorited, isItemAdded} = React.useContext(AppContext);
     return (
       <div className="content">
         <div className="mb-40 d-flex align-center justify-between">
@@ -18,6 +18,7 @@ const {favorites,isItemFavorited} = React.useContext(AppContext);
                 key={item.id}
                 onPlus={onAddToCart}
                 favorited={isItemFavorited(item && item.id)}
+                added={isItemAdded(item && item.id)}
                  onFavorite={onAddToFavorite}
                  loading={false}
                  isFavorited

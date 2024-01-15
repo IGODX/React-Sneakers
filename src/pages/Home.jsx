@@ -31,7 +31,7 @@ function Home({ items,
       <div className="mb-40 d-flex align-center justify-between">
         <h1 className="mainTitle">{searchValue ? `Поиск по запросу: '${searchValue}'` : 'Все кроссовки'}</h1>
         <div className="d-flex search-block">
-          <img src="/img/search.svg" alt="Search" />
+          <img src="img/search.svg" alt="Search" />
           <input onChange={onChangeSearchInput} type="text" placeholder="Поиск..." />
         </div>
       </div>

@@ -121,7 +121,7 @@ const onAddToCart = async (obj) => {
     <Header onClickCart={()=> setCartOpened(true)}/>
     <Routes>
     <Route
-          path="/"
+          path=""
           element={
             <Home
             cartItems={cartItems}
@@ -136,9 +136,9 @@ const onAddToCart = async (obj) => {
           }
           exact
         />
-    <Route path='/favorites' exact element={<Favorites onAddToFavorite={onAddToFavorite} onAddToCart={onAddToCart}></Favorites>}>
+    <Route path='favorites' exact element={<Favorites onAddToFavorite={onAddToFavorite} onAddToCart={onAddToCart}></Favorites>}>
     </Route>
-    <Route path='/orders' exact element={<Orders ></Orders>}>
+    <Route path='orders' exact element={<Orders ></Orders>}>
     </Route>
     </Routes>
     </div>

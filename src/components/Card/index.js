@@ -54,7 +54,7 @@ function Card({onFavorite,
               width={32}
               height={32}
               onClick={onClickPlus}
-              src={isFavorited ? "/img/btnChecked.svg" : isItemAdded(id) ? "/img/btnChecked.svg" : "/img/btnAdd.svg"}
+              src={isItemAdded( parentId? parentId: id) ? "/img/btnChecked.svg" : "/img/btnAdd.svg"}
               alt="Add Sneakers"
             />
         }
